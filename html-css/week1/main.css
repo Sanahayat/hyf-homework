@@ -1,0 +1,149 @@
+body {
+    background:
+       url(https://lh3.googleusercontent.com/LYVJapDcftEWmFn_N6NfZX_sR7MhRTn_zzwD2UN_xveCIbdXYlvg7auzVuD2kAmvGvAVZ4JdJ31wT8NhN4nqTd0dqHzozOQeOs1u1zxCeQ-LSLCsVN0kF4eZoXtznyxdjRavr18rVkCxyvlcP_B0jw6_LAUseZCw0U3muOnfz0HkPGrxZvOkAgiEomgM5Tf32PZ0ixkybviryMqcrInlQ9ybPf9hyhpjmR2iVodG9UIfP906yF1e3yfNq4UMyJ7gcIQgw7-gKCB70wVEjLO1XacHNKebmRIqQUT4Z1h88141zHT63CSmcvJVve8xJx-1laRzuxDiZJJBfUxLhIgXDYoN6wnIuqIN4cjXwNVHJ5UhNjCwtdQRMb_Ch6AFqmSK0qZL4ET-QIuyaCtU1DLfsdDzvJ6I89Ii2eRicYAB_lVIfPN_f1xcgB_CvsXp_abPCi5k4qBjMN1AsieKeoO535h378N-Vbk4w_Z0fs78-C_LKPYudFePwGfj8eGSRkWzk91ywvJe9C3CLWnPbLCxCxCQX84IypSyMkBvqPlI9jTAfuLlyxorOq-_78Spsi3-s19uKJ8MnhQ9AUfK23uSRt4BPNB9a0RObaQ7d3pamJNMmvFWyPh9zsHIFSZGtDLWcp7PGuRJtwwf9cEaa-xXmlQpSqXQZtk3IWT07HuISoYzEQ=w914-h608-no); /* image */
+    background-size: cover;
+    height:100vw;
+    }
+div{
+    align-self: center;
+    width:60vw;
+    height:95vw;
+    background-color: rgb(255, 254, 254);
+    margin:0 auto;
+}    
+.self-picture{
+    width:25%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-left: 30px;
+    float:left;
+}
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+header{
+    background: black;
+    height: 25%;
+    border-bottom-left-radius: 150%; 
+    color:white; 
+}
+h1{
+    padding-top: 2em;
+}
+aside{
+    float: right;
+    margin-top:auto;
+}
+aside>ul{
+    display:block;
+}
+aside li{
+    padding:0.5em;
+}
+main{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+h2 {
+    overflow: hidden;
+    position: relative;
+}
+h2::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:black;
+    position: absolute;
+    top: 50%;
+    margin-left: 1rem;
+    margin-right:inherit;
+}
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+     appearance: none;
+    width: 150px;
+    height: 15px;
+   }
+progress::-webkit-progress-value {
+    background: gray;
+  }
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+.no-style-list{
+    list-style-type:none;
+}
+  .table-style-layout,li {
+    box-sizing: border-box;
+}
+  .table-style-layout {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.table-style-layout > li {
+    flex: 0 0 50%;
+    padding: 1em;
+}
+.icon::before {
+    padding-right:10px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+ }
+.HTML5::before {
+    font-family: "Font Awesome 5 Brands";  content: "\f13b";
+}
+
+.CSS::before {
+    font-family: "Font Awesome 5 Brands"; content: "\f13c";
+}
+
+.GitHub::before {
+    font-family: "Font Awesome 5 Brands"; content: "\f09b";
+}
+.VS::before {
+    font-family: "Font Awesome"; content: "\f5fc";
+}
+.phone::before {
+    font-family: "Font Awesome 5 SolidStyle"; content: "\f098";
+}
+.address::before{
+    font-family: "Font Awesome 5 Free"; content: "\f5a0";
+}
+.email::before{
+    font-family: "Font Awesome 5 Free"; content: "\f0e0";
+}
+.education::before{
+    font-family: "Font Awesome 5 Free"; content: "\f19d";
+}
+.language::before{
+    font-family: "Font Awesome 5 Free"; content: "\f1ab";
+}
+.computer::before{
+    font-family:"Font Awesome 5 Free"; content: "\f109"; 
+}
+footer{
+    background: black;
+    align-self: center;
+    width:60vw;
+    height:2vw;
+    margin:0 auto;
+}
+a{
+    color:green;
+}
+a:hover{
+    font-weight: bold;
+}
+  
