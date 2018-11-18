@@ -61,11 +61,7 @@ li img{
     align-items: center;
     flex-wrap: wrap;
   }
-.flex-grid .col, {
-    flex: 1;
-    padding: 20px;
-    margin: 0 auto;
-  }
+
 flex-box,col{
     box-sizing: border-box;
   }
