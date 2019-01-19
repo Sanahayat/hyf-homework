@@ -4,7 +4,7 @@ let arrayOfDividentsOfFive = [];
 let arrayOfDividentsOfThreeAndFive = [];
 
 //Creating function to calculate array from startvalue to endValue...
-function calculationFunction(startValue, endValue, threeCallBack, fiveCallBack) {
+function threeFive(startValue, endValue, threeCallBack, fiveCallBack) {
 
     for (let i = startValue; i <= endValue; i++) {
         calculatedArray.push(i);
@@ -30,7 +30,7 @@ function dividentOfThreeAndFive(number) {
     arrayOfDividentsOfThreeAndFive.push(number);
 }
 
-calculationFunction(20, 30, dividentOfThree, dividentOfFive);
+threeFive(20, 30, dividentOfThree, dividentOfFive);
 console.log(calculatedArray);
 console.log(arrayOfDividentsOfFive);
 console.log(arrayOfDividentsOfThree);
