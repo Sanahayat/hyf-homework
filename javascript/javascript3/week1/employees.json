@@ -1,0 +1,53 @@
+[
+    {
+        "employee-id": 123,
+        "name": "Ahmad",
+        "age": "26",
+        "exprience": {
+            "years": 0,
+            "months": 4
+        },
+        "education": "abc",
+        "address": {
+            "street": "oxford alle",
+            "house-nr": 4,
+            "postcode": 2000,
+            "city": "Copenhagen",
+            "country": "Denmark"
+        }
+    },
+    {
+        "employee-id": 124,
+        "name": "Luna",
+        "age": 30,
+        "exprience": {
+            "years": 5,
+            "months": 0
+        },
+        "education": "vbvjd",
+        "address": {
+            "street": "englandsvej",
+            "house-nr": "22A",
+            "postcode": "2200",
+            "city": "Copenhagen",
+            "country": "Denmark"
+        }
+    },
+    {
+        "employee-id": 125,
+        "name": "John",
+        "age": 34,
+        "exprience": {
+            "years": 5,
+            "months": 6
+        },
+        "education": "aaaaa",
+        "address": {
+            "street": "abc-xyz",
+            "house-nr": "44C",
+            "postcode": 2800,
+            "city": "Copenhagen",
+            "country": "Denmark"
+        }
+    }
+]
