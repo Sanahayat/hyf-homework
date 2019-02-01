@@ -37,7 +37,7 @@ document.getElementById('submitLocationButton').addEventListener('click', () => 
     if (searchInput)
         searchWeather(searchInput);
     else
-        document.getElementById('weatherContainer').innerHTML = "Please insert City name!";
+       alert("Please insert City name!");
 
 });
 
