@@ -2,7 +2,7 @@
 let units = 'metric';
 //function for API call
 function searchWeather(searchInput) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchInput}&units=${units}&appid=d62d43f576894249f4b6fec44b536f48`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&units=${units}&appid=d62d43f576894249f4b6fec44b536f48`)
         .then(response => response.json())
         .then((result) => {
             console.log('gotit')
@@ -52,7 +52,7 @@ document.getElementById('currentLocationButton').addEventListener('click', () =>
         let longi = position.coords.longitude
 
         //this code here is DRY. couldn't figure out how not to repeat it.????
-        fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${longi}&units=${units}&appid=d62d43f576894249f4b6fec44b536f48`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${longi}&units=${units}&appid=d62d43f576894249f4b6fec44b536f48`)
             .then(response => response.json())
             .then((result) => {
                 console.log('gotit')
