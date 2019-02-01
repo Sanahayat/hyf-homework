@@ -1,0 +1,51 @@
+html { 
+    background: url('sky-img.png') no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+    text-align: center;
+}
+h2{
+   padding-top: 20px;
+}
+#searchContainer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 20px
+}
+#location, button{
+    display: block;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;;
+}
+#weatherContainer{
+
+    box-shadow: 1px 1px 5px black;
+    padding: 50px;
+    border-radius: 10px;
+    width: auto;
+    max-width:200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;    
+    align-content: center;
+    overflow: hidden;
+}
+h1{
+    margin: 5px;
+    font-size: 42px;
+}
+#weatherInfo{
+    display: block;
+    margin-bottom: 20px;
+}
+img{
+    height: 120px;
+}

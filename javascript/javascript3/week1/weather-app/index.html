@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Please Insert a City name to see weather. Or click <em>'Weather at my Location'</em> button.</p>
+    <div id="searchContainer">
+        <input type="text" id="location" />
+        <button id="submitLocationButton">Check Weather</button>
+    </div>
+    <div id="weatherContainer">
+        <h1 id="cityName"></h1>
+        <div id="weathrInfo">
+            <div class="inline" id="temperature"></div>
+            <div class="inline" id="weatherDescription"></div>
+            <div class="inline"><img id="iconImg" src="https://gph.to/2RvbCd6" alt="Weather Icon!"></div>
+        </div>
+    </div>
+    <button id="currentLocationButton">Weather at my Location</button>
+
+    <script src="weather_app.js"></script>
+</body>
+
+</html>
