@@ -1,12 +1,13 @@
+
+body{
+    text-align: center;
+}
 html { 
     background: url('sky-img.png') no-repeat center center fixed #000; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-body{
-    text-align: center;
 }
 h2{
    padding-top: 20px;
