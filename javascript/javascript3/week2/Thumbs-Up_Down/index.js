@@ -23,8 +23,15 @@ function giveAnimationToLi(index, request) {
         } else if (index > lengthOfallListElements) {
             document.querySelector('ul').innerHTML = "Thanks for FeedBack";
         }
-
-        resolve();
+        // wait for the transitionend event
+        allListElements[index].addEventListener('transitionend', function (e) {
+            // event is fired on both transform and opacity ending - we only want one event
+            if ( e.propertyName == "transform" ) {
+                resolve();
+            }
+            
+        })
+       
     })
 
 }
@@ -35,24 +42,26 @@ function animateNextLiToView(nextLi) {
         document.querySelector('ul').innerHTML = "Thanks for FeedBack";
 }
 
+var pending = false;
+var buttons = document.querySelectorAll('button');
 
-document.querySelector('.accept').addEventListener('click', () => {
-    giveAnimationToLi(indexOfallListElements, 'thumbsUp')
+
+document.querySelector('.interaction-container').addEventListener('click', (event) => {
+
+    // loop through elements clicked under mouse in the e.path array
+    var button = event.path.find(e => e.className == "accept") ? 'thumbsUp' : 'thumbsDown';
+    // if animating/pending - return;
+    if (pending) return;
+    pending = true;
+    giveAnimationToLi(indexOfallListElements, button)
         .then(() => {
+            pending = false;
             animateNextLiToView(indexOfallListElements + 1);
             indexOfallListElements++;
             console.log(indexOfallListElements)
         });
 })
 
-document.querySelector('.reject').addEventListener('click', () => {
-    giveAnimationToLi(indexOfallListElements, 'thumbsDown')
-        .then(() => {
-            animateNextLiToView(indexOfallListElements + 1);
-            indexOfallListElements++;
-            console.log(indexOfallListElements)
-        })
-})
 
 function createImageTags() {
     allListElements.forEach(listElement => {
