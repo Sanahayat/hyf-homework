@@ -27,14 +27,14 @@ where task.status_id = status.id && status.name not like "done%";
 # 5. Get all the tasks, sorted with the most recently created first
 select *
 from task
-order by created asc; 
+order by created desc; 
 
 
 # 6. Get the single most recently created task
 select *
 from task
-order by created asc
-limit 0, 1;
+order by created desc
+limit 0,1;
 
 
 # 7. Get the title and due date of all tasks where the title or description contains database
